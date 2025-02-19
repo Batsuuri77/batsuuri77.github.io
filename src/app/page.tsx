@@ -1,6 +1,6 @@
 'use client';
 import WavingHand from './components/Wave';
-import { IMAGE_PATHS } from '@/app/utils/imagePaths';
+import { IMAGE_PATHS, PRO_PATH } from '@/app/utils/imagePaths';
 import Technologies from './components/Technologies';
 import { Typewriter } from 'react-simple-typewriter';
 import Image from 'next/image';
@@ -53,7 +53,7 @@ export default function Home() {
             {/* Image section */}
             <div className='flex-shrink-0 w-52 h-64 sm:w-52 sm:h-64 md:w-60 md:h-72 lg:w-[500px] lg:h-[530px] overflow-hidden drop-shadow-2xl rounded-2xl'>
               <Image
-                src='/Images/pro.PNG'
+                src={PRO_PATH.pro}
                 alt="Batsuuri's profile 1.06"
                 layout='responsive'
                 objectFit='cover'
