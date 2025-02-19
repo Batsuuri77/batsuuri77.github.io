@@ -20,5 +20,5 @@ export const PROJECTS_IMAGE_PATHS = {
 };
 
 export const PRO_PATH = {
-  pro: '/Images/Pro.png',
+  pro: '/Images/pro.png',
 };
