@@ -15,14 +15,14 @@ export default function Home() {
     console.log(`Done after 5 loops!`);
   };
   return (
-    <main className='flex min-h-screen flex-col items-center justify-center pt-40 pb-10'>
+    <main className='flex min-h-screen flex-col items-center justify-center pt-28 pb-10'>
       {/*Content container*/}
       <div className='flex flex-col justify-between items-center gap-8 p-4 w-full'>
         {/* Bio section */}
         <div className='flex flex-row justify-center items-center w-full gap-8'>
           {/* Text Section */}
           <div className='flex flex-col justify-center items-center gap-4'>
-            <div className='text-9xl sm:text-9xl font-semibold mb-10'>
+            <div className='text-7xl font-semibold mb-10'>
               <div>
                 <Typewriter
                   words={[
@@ -51,7 +51,7 @@ export default function Home() {
               </div>
             </div>
             {/* Image section */}
-            <div className='flex-shrink-0 w-52 h-64 sm:w-52 sm:h-64 md:w-60 md:h-72 lg:w-[500px] lg:h-[530px] overflow-hidden drop-shadow-2xl rounded-2xl'>
+            <div className='flex-shrink-0 w-52 h-64 sm:w-52 sm:h-64 md:w-60 md:h-72 lg:w-[470px] lg:h-[500px] overflow-hidden drop-shadow-2xl rounded-2xl'>
               <Image
                 src={PRO_PATH.pro}
                 alt="Batsuuri's profile 1.06"
@@ -61,7 +61,7 @@ export default function Home() {
                 height={687}
               />
             </div>
-            <p className=' sm:text-4xl mt-14 mb-20  text-center'>
+            <p className=' sm:text-3xl my-4  text-center'>
               I am <span className='font-bold'>BATSUURI BATTSOOJ</span>, <br />a
               passionate front-end developer settled in Melbourne, Australia 🙂.
             </p>
