@@ -3,27 +3,31 @@ import Image from 'next/image';
 import JobExperience from '../../components/JobExperience';
 import BinaryMeter from '../../components/BinaryMeter';
 import ProjectBrief from '../../components/ProjectBrief';
-import { PRO_PATH, PROJECTS_IMAGE_PATHS } from '@/app/utils/imagePaths';
+import {
+  PRO_PATH,
+  PROJECTS_IMAGE_PATHS,
+  SOCIAL_IMAGE_PATHS,
+} from '@/app/utils/imagePaths';
 
 const About = () => {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-center sm:p-10 md:p-20 lg:p-52'>
+    <main className='flex min-h-screen flex-col items-center justify-center px-48 pt-44 pb-20'>
       {/*Content container*/}
-      <div className='flex flex-col justify-between items-start gap-4 p-4 w-full'>
+      <div className='flex flex-col justify-between items-start'>
         {/* Bio section */}
-        <div className='flex flex-row justify-between w-full gap-8 py-24'>
+        <div className='flex flex-row justify-between gap-20 mb-10'>
           {/* Text Section */}
-          <div className='flex flex-col justify-between items-start gap-4 max-w-6xl'>
-            <h1 className='text-8xl font-semibold'>G&apos;DAY MATES! 👋</h1>
+          <div className='flex flex-col justify-between items-start'>
+            <h1 className='text-7xl font-semibold'>G&apos;DAY MATES! 👋</h1>
             <p className='text-2xl'>
               I am <span className='font-bold'>BATSUURI BATTSOOJ</span>, a
               formal Business Development Manager who turned into a passionate
               front-end developer settled in Melbourne, Australia 🙂.
               <br />
-              <br />
+              {/* <br />
               <span>I was born and raised in Mongolia.</span>
               <br />
-              <br />
+              <br /> */}
               <span>
                 I began my coding journey as a self-learner, and later enhanced
                 my academic knowledge by earning a{' '}
@@ -49,7 +53,7 @@ const About = () => {
             <div>
               <BinaryMeter
                 containerClassName='flex space-x-4 text-9xl font-bold'
-                digitClassName='w-24 h-24 flex text-gray-400 items-center justify-center rounded overflow-hidden'
+                digitClassName='w-32 h-32 flex text-gray-400 items-center justify-center rounded overflow-hidden'
                 binaryNumber='1001101'
               ></BinaryMeter>
             </div>
@@ -61,7 +65,7 @@ const About = () => {
 
           {/* Image section */}
           <div className='flex flex-col justify-center items-center gap-8'>
-            <div className='flex-shrink-0 w-52 h-64 sm:w-52 sm:h-64 md:w-60 md:h-72 lg:w-[483px] lg:h-[513px] overflow-hidden drop-shadow-2xl rounded-2xl'>
+            <div className='flex-shrink-0 w-52 h-64 sm:w-52 sm:h-64 md:w-60 md:h-72 lg:w-[453px] lg:h-[483px] overflow-hidden drop-shadow-2xl rounded-2xl'>
               <Image
                 src={PRO_PATH.pro}
                 alt="Batsuuri's profile 1.06"
@@ -91,10 +95,10 @@ const About = () => {
                     rel='noopener noreferrer'
                   >
                     <Image
-                      src={'/Images/social/Facebook.png'}
+                      src={SOCIAL_IMAGE_PATHS.facebook}
                       alt={'facebook'}
-                      width={60}
-                      height={60}
+                      width={50}
+                      height={50}
                     ></Image>
                   </a>
                   <a
@@ -103,10 +107,10 @@ const About = () => {
                     rel='noopener noreferrer'
                   >
                     <Image
-                      src={'/Images/social/Instagram.png'}
+                      src={SOCIAL_IMAGE_PATHS.instagram}
                       alt={'instagram'}
-                      width={60}
-                      height={60}
+                      width={50}
+                      height={50}
                     ></Image>
                   </a>
                   <a
@@ -115,10 +119,10 @@ const About = () => {
                     rel='noopener noreferrer'
                   >
                     <Image
-                      src={'/Images/social/GitHub.png'}
+                      src={SOCIAL_IMAGE_PATHS.github}
                       alt={'github'}
-                      width={60}
-                      height={60}
+                      width={50}
+                      height={50}
                     ></Image>
                   </a>
                   <a
@@ -127,10 +131,10 @@ const About = () => {
                     rel='noopener noreferrer'
                   >
                     <Image
-                      src={'/Images/social/Linkedin.png'}
+                      src={SOCIAL_IMAGE_PATHS.linkedin}
                       alt={'linkedin'}
-                      width={60}
-                      height={60}
+                      width={50}
+                      height={50}
                     ></Image>
                   </a>
                 </div>
@@ -139,64 +143,69 @@ const About = () => {
           </div>
         </div>
 
-        {/* IceBreaker */}
-        <div className='flex flex-col justify-between items-start gap-10 mt-8'>
-          <div>
-            <h1 className='text-3xl font-semibold mb-2'>ICEBREAKER FACTS</h1>
-            <p className='text-2xl'>
-              - I have been living in Melbourne since 2023. <br />
-              - I had been artistic gymnast for 7 years since 9 years old and I
-              am an international judge of men&apos;s artistic gymnastics since
-              2018.
-              <br />- I have been financial analyst, business development
-              manager, and project manager in Mongolian group company. <br />
-            </p>
-          </div>
-
-          {/* Education */}
-          <div>
-            <h1 className='text-3xl font-semibold mb-2'>EDUCATION</h1>
-            <ul>
-              <li className='mt-2'>
-                <h3 className='text-2xl font-semibold text-gray-800'>
-                  Master of IT (Mobile app development)
-                </h3>
-                <p className='text-2xl'>
-                  Central Queensland University (CQU){' '}
-                  <span className='ml-10 text-green-600 font-semibold'>
-                    03.2023 - 11.2024
-                  </span>
-                  {/* <span className="ml-10">
+        <div className='flex flex-col justify-between items-start gap-10'>
+          {/* IceBreaker and education */}
+          <div className='flex flex-row my-10 justify-between gap-10'>
+            {/* Education */}
+            <div className='flex-1 flex flex-col justify-top items-start gap-4'>
+              <h1 className='text-3xl font-semibold mb-2'>EDUCATION</h1>
+              <ul>
+                <li className='mt-2'>
+                  <h3 className='text-2xl font-semibold text-gray-800'>
+                    Master of IT (Mobile app development)
+                  </h3>
+                  <p className='text-2xl'>
+                    Central Queensland University (CQU){' '}
+                    <span className='ml-10 text-green-600 font-semibold'>
+                      03.2023 - 11.2024
+                    </span>
+                    {/* <span className="ml-10">
                     GPA: <span className=" text-blue-700">5.37 out of 7</span>
                   </span> */}
-                </p>
-              </li>
-              <li>
-                <br />
-                <span className='text-2xl font-semibold text-gray-800'>
-                  Bachelor of economics and business administration
-                </span>
-                <p className='text-2xl'>
-                  Mongolina National University (MNU){' '}
-                  <span className='ml-10 text-green-600 font-semibold'>
-                    09.2014 - 05.2018
+                  </p>
+                </li>
+                <li>
+                  <br />
+                  <span className='text-2xl font-semibold text-gray-800'>
+                    Bachelor of economics and business administration
                   </span>
-                  {/* <span className="ml-10">
+                  <p className='text-2xl'>
+                    Mongolina National University (MNU){' '}
+                    <span className='ml-10 text-green-600 font-semibold'>
+                      09.2014 - 05.2018
+                    </span>
+                    {/* <span className="ml-10">
                     GPA: <span className="text-blue-700">3.5 out of 4</span>
                   </span> */}
-                </p>
-              </li>
-            </ul>
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            {/* IceBreaker */}
+            <div className='flex-1 flex flex-col justify-top items-start gap-4'>
+              <h1 className='text-3xl font-semibold mb-2'>ICEBREAKER</h1>
+              <p className='text-2xl'>
+                - I have been living in Melbourne since 2023. <br />- I had been
+                artistic gymnast for 7 years and I am an
+                &nbsp;&nbsp;international judge of men&apos;s artistic
+                gymnastics since &nbsp;&nbsp;2018.
+                <br />- I was a financial analyst, business development
+                &nbsp;&nbsp;manager, and project manager in Mongolian group
+                &nbsp;&nbsp;company.
+                <br />
+              </p>
+            </div>
           </div>
 
           {/* Work Experience */}
-          <div>
+          <div className='flex-1 flex flex-col justify-top items-start gap-4'>
             <h1 className='text-3xl font-semibold mb-2'>RELATED EXPERIENCE</h1>
             <ul className='gap-4 space-between flex flex-col'>
               <li>
                 <JobExperience
                   title={'administartion assistant'}
-                  company={'edu master pty ltd'}
+                  company={'edu master pty ltd - full time'}
                   location={'Australia'}
                   startDate={'since'}
                   endDate={'05.2023'}
@@ -210,7 +219,7 @@ const About = () => {
                     },
                     {
                       description:
-                        'using the WordPress platform. Updating text, media content, blogs, posts, and service descriptions',
+                        'using a WordPress. Updating texts, media contents, blogs, posts, and service descriptions.',
                     },
                     {
                       description:
@@ -241,11 +250,9 @@ const About = () => {
           </div>
 
           {/* Academic Projects */}
-          <div>
-            <h1 className='lg:text-m md:text-m sm:text-3xl text-3xl font-semibold mb-4'>
-              ACADEMIC PROJECTS
-            </h1>
-            <div className='flex flex-row gap-4 justify-start items-start'>
+          <div className='flex-1 flex flex-col justify-top items-start gap-4'>
+            <h1 className='text-3xl font-semibold mb-4'>ACADEMIC PROJECTS</h1>
+            <div className='flex flex-row gap-10 justify-start items-start'>
               <ProjectBrief
                 imagePath={PROJECTS_IMAGE_PATHS.bookhub}
                 imageAlt={'BOOKHUB'}

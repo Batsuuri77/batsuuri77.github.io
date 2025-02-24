@@ -22,3 +22,10 @@ export const PROJECTS_IMAGE_PATHS = {
 export const PRO_PATH = {
   pro: '/Images/pro.png',
 };
+
+export const SOCIAL_IMAGE_PATHS = {
+  facebook: '/Images/social/Facebook.png',
+  instagram: '/Images/social/Instagram.png',
+  github: '/Images/social/GitHub.png',
+  linkedin: '/Images/social/Linkedin.png',
+};

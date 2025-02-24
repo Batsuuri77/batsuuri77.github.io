@@ -61,7 +61,7 @@ export default function Home() {
                 height={687}
               />
             </div>
-            <p className=' sm:text-3xl my-4  text-center'>
+            <p className='text-2xl my-6  text-center'>
               I am <span className='font-bold'>BATSUURI BATTSOOJ</span>, <br />a
               passionate front-end developer settled in Melbourne, Australia 🙂.
             </p>
@@ -77,7 +77,7 @@ export default function Home() {
 
             {/* Front-End Technologies */}
             <div className='flex flex-col gap-4 mb-10'>
-              <h2 className='text-2xl font-semibold text-center text-blue-700'>
+              <h2 className='text-2xl font-semibold text-center text-green-700'>
                 FRONT-END
               </h2>
               <div className='flex flex-row gap-20 items-center justify-center'>
@@ -85,76 +85,87 @@ export default function Home() {
                   imagePath={IMAGE_PATHS.html}
                   imageAlt={'HTML'}
                   title={'HTML5'}
+                  shadowColor='#4fcf75'
                 />
                 <Technologies
                   imagePath={IMAGE_PATHS.js}
                   imageAlt={'JavaScript'}
                   title={'JavaScript'}
+                  shadowColor='#4fcf75'
                 />
                 <Technologies
                   imagePath={IMAGE_PATHS.react}
                   imageAlt={'React'}
                   title={'React'}
+                  shadowColor='#4fcf75'
                 />
                 <Technologies
                   imagePath={IMAGE_PATHS.react}
                   imageAlt={'React Native'}
                   title={'React Native'}
+                  shadowColor='#4fcf75'
                 />
                 <Technologies
                   imagePath={IMAGE_PATHS.nextjs}
                   imageAlt={'Next.js'}
                   title={'Next.js'}
+                  shadowColor='#4fcf75'
                 />
               </div>
             </div>
-            <div className='flex flex-row gap-20 items-center justify-center'>
-              {/* Styling Technologies */}
-              <div className='flex flex-col gap-4 mb-10'>
-                <h2 className='text-2xl font-semibold text-center  text-blue-700'>
-                  STYLING
-                </h2>
-                <div className='flex flex-row gap-20 items-center justify-center'>
-                  <Technologies
-                    imagePath={IMAGE_PATHS.css}
-                    imageAlt={'CSS'}
-                    title={'CSS'}
-                  />
-                  <Technologies
-                    imagePath={IMAGE_PATHS.tailwind}
-                    imageAlt={'Tailwind CSS'}
-                    title={'Tailwind CSS'}
-                  />
-                  <Technologies
-                    imagePath={IMAGE_PATHS.figma}
-                    imageAlt={'Figma'}
-                    title={'Figma'}
-                  />
+            <div className='flex flex-row gap-4'>
+              <div className='flex flex-row gap-20 items-center justify-center'>
+                {/* Styling Technologies */}
+                <div className='flex flex-col gap-4'>
+                  <h2 className='text-2xl font-semibold text-center  text-blue-700'>
+                    STYLING
+                  </h2>
+                  <div className='flex flex-row gap-20 items-center justify-center'>
+                    <Technologies
+                      imagePath={IMAGE_PATHS.css}
+                      imageAlt={'CSS'}
+                      title={'CSS'}
+                      shadowColor='#69b0f7'
+                    />
+                    <Technologies
+                      imagePath={IMAGE_PATHS.tailwind}
+                      imageAlt={'Tailwind CSS'}
+                      title={'Tailwind CSS'}
+                      shadowColor='#69b0f7'
+                    />
+                    <Technologies
+                      imagePath={IMAGE_PATHS.figma}
+                      imageAlt={'Figma'}
+                      title={'Figma'}
+                      shadowColor='#69b0f7'
+                    />
+                  </div>
                 </div>
-              </div>
-
-              {/* Back-End Technologies */}
-              <div className='flex flex-col gap-4 items-center justify-center pb-10'>
-                <h2 className='text-2xl font-semibold text-center  text-blue-700'>
-                  BACK-END
-                </h2>
-                <div className='flex flex-row gap-20 items-center justify-center'>
-                  <Technologies
-                    imageClassName='w-[180px]'
-                    imagePath={IMAGE_PATHS.nodejs}
-                    imageHeight={100}
-                    imageWidth={170}
-                    title='Node.js'
-                    imageAlt={'Node.js'}
-                  />
-                  <Technologies
-                    imageClassName='w-[180px]'
-                    imagePath={IMAGE_PATHS.mongodb}
-                    imageHeight={100}
-                    imageWidth={170}
-                    title='MongoDB'
-                    imageAlt={'MongoDB'}
-                  />
+                {/* Back-End Technologies */}
+                <div className='flex flex-col gap-4 items-center justify-center'>
+                  <h2 className='text-2xl font-semibold text-center  text-purple-700'>
+                    BACK-END
+                  </h2>
+                  <div className='flex flex-row gap-20 items-center justify-center'>
+                    <Technologies
+                      imageClassName='relative'
+                      imagePath={IMAGE_PATHS.nodejs}
+                      imageHeight={50}
+                      imageWidth={100}
+                      title='Node.js'
+                      imageAlt={'Node.js'}
+                      shadowColor='#c076e0'
+                    />
+                    <Technologies
+                      imageClassName='relative'
+                      imagePath={IMAGE_PATHS.mongodb}
+                      imageHeight={50}
+                      imageWidth={100}
+                      shadowColor='#c076e0'
+                      title='MongoDB'
+                      imageAlt={'MongoDB'}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
