@@ -15,7 +15,7 @@ const About = () => {
       {/*Content container*/}
       <div className='flex flex-col justify-between items-start'>
         {/* Bio section */}
-        <div className='flex flex-row justify-between gap-20 mb-10'>
+        <div className='flex flex-row justify-between gap-20 mb-16'>
           {/* Text Section */}
           <div className='flex flex-col justify-between items-start'>
             <h1 className='text-7xl font-semibold'>G&apos;DAY MATES! 👋</h1>
@@ -77,12 +77,12 @@ const About = () => {
             </div>
             <div className='flex flex-col justify-center items-center gap-2'>
               <div className='flex flex-col justify-center items-center'>
-                <h1 className='font-semibold text-4xl mb-2'>FIND ME ON 👇</h1>
+                <h1 className='font-semibold text-3xl mb-2'>FIND ME ON 👇</h1>
                 <a
                   href='mailto: batsuuri2146@gmail.com'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='flex flex-row justify-between gap-4 text-2xl'
+                  className='flex flex-row justify-between gap-4 text-xl'
                 >
                   batsuuri2146@gmail.com
                 </a>
@@ -97,8 +97,8 @@ const About = () => {
                     <Image
                       src={SOCIAL_IMAGE_PATHS.facebook}
                       alt={'facebook'}
-                      width={50}
-                      height={50}
+                      width={15.5}
+                      height={30}
                     ></Image>
                   </a>
                   <a
@@ -109,8 +109,8 @@ const About = () => {
                     <Image
                       src={SOCIAL_IMAGE_PATHS.instagram}
                       alt={'instagram'}
-                      width={50}
-                      height={50}
+                      width={30}
+                      height={30}
                     ></Image>
                   </a>
                   <a
@@ -121,8 +121,8 @@ const About = () => {
                     <Image
                       src={SOCIAL_IMAGE_PATHS.github}
                       alt={'github'}
-                      width={50}
-                      height={50}
+                      width={30}
+                      height={30}
                     ></Image>
                   </a>
                   <a
@@ -133,8 +133,8 @@ const About = () => {
                     <Image
                       src={SOCIAL_IMAGE_PATHS.linkedin}
                       alt={'linkedin'}
-                      width={50}
-                      height={50}
+                      width={30}
+                      height={30}
                     ></Image>
                   </a>
                 </div>
@@ -250,7 +250,7 @@ const About = () => {
           </div>
 
           {/* Academic Projects */}
-          <div className='flex-1 flex flex-col justify-top items-start gap-4'>
+          <div className='flex-1 flex flex-col justify-top items-start gap-4 mt-20'>
             <h1 className='text-3xl font-semibold mb-4'>ACADEMIC PROJECTS</h1>
             <div className='flex flex-row gap-10 justify-start items-start'>
               <ProjectBrief

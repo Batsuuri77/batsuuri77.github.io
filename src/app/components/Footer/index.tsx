@@ -7,12 +7,12 @@ const Footer = () => {
     <footer>
       <div className='flex flex-col justify-between pt-6 border-t-[2px] border-borderBlack border-dashed w-full h-50'>
         <div className='flex flex-col justify-center items-center gap-4'>
-          <h1 className='font-semibold text-5xl'>FIND ME ON 👇</h1>
+          <h1 className='font-semibold text-4xl'>FIND ME ON 👇</h1>
           <a
             href='mailto: batsuuri2146@gmail.com'
             target='_blank'
             rel='noopener noreferrer'
-            className='flex flex-row justify-between gap-4 text-2xl'
+            className='flex flex-row justify-between gap-4 text-xl'
           >
             batsuuri2146@gmail.com
           </a>
@@ -27,8 +27,8 @@ const Footer = () => {
               <Image
                 src={SOCIAL_IMAGE_PATHS.facebook}
                 alt={'facebook'}
-                width={50}
-                height={50}
+                width={15.5}
+                height={30}
               ></Image>
             </a>
             <a
@@ -39,8 +39,8 @@ const Footer = () => {
               <Image
                 src={SOCIAL_IMAGE_PATHS.instagram}
                 alt={'instagram'}
-                width={50}
-                height={50}
+                width={30}
+                height={30}
               ></Image>
             </a>
             <a
@@ -51,8 +51,8 @@ const Footer = () => {
               <Image
                 src={SOCIAL_IMAGE_PATHS.github}
                 alt={'github'}
-                width={50}
-                height={50}
+                width={30}
+                height={30}
               ></Image>
             </a>
             <a
@@ -63,8 +63,8 @@ const Footer = () => {
               <Image
                 src={SOCIAL_IMAGE_PATHS.linkedin}
                 alt={'linkedin'}
-                width={50}
-                height={50}
+                width={30}
+                height={30}
               ></Image>
             </a>
           </div>
