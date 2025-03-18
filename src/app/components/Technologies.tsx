@@ -11,10 +11,11 @@ interface TechnologiesProps {
   title?: string;
   titleClassName?: string;
   shadowColor?: string;
+  borderColor?: string;
 }
 
 const Technologies: React.FC<TechnologiesProps> = ({
-  containerClassName = 'w-[200px] h-[150px] flex flex-col items-center justify-center border border-gray/20 rounded-2xl shadow-2xl bg-white/10 backdrop-blur-2xl backdrop-saturate-150 p-6',
+  containerClassName = 'w-[150px] h-[150px] flex flex-col items-center justify-center  rounded-2xl ',
   imageClassName = 'relative',
   imagePath,
   imageHeight = 50,
@@ -22,13 +23,9 @@ const Technologies: React.FC<TechnologiesProps> = ({
   imageAlt,
   title,
   titleClassName = 'mt-4 text-xl font-semibold',
-  shadowColor = 'rgba(0, 0, 0, 0.2)',
 }) => {
   return (
-    <div
-      className={containerClassName}
-      style={{ boxShadow: `0 3px 20px ${shadowColor}` }}
-    >
+    <div className={containerClassName}>
       <div className={imageClassName}>
         <Image
           src={imagePath}

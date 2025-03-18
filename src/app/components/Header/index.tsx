@@ -7,7 +7,7 @@ import Navbar from '../Navbar';
 const Header = () => {
   const navLinks = [
     // { name: "Projects", href: "/pages/projects" },
-    { name: 'About', href: '/pages/about' },
+    { name: 'About', href: '/pages/about/' },
   ];
 
   return (
@@ -18,27 +18,9 @@ const Header = () => {
           <span className='font-light text-center text-xl text-gray-800 px-4 py-2'>
             <Link href={'/'}>BATSUURI</Link>
           </span>
-
-          {/* BinaryMeter */}
-          {/* <div>
-          <BinaryMeter binaryNumber="1001101"></BinaryMeter>
-        </div> */}
           <div className='flex flex-row justify-between items-center'>
             {/* Navigations */}
             <Navbar links={navLinks}></Navbar>
-            {/* <nav className="hidden sm:flex flex-row justify-between md:gap-14 mr-20 text-lg font-medium items-center"> 
-              <Link href={"/"}>Blog</Link>
-              <Link href={"/pages/projects"} legacyBehavior>
-                <a className="hover:underline hover:underline-thickness-4">
-                  Projects
-                </a>
-              </Link>
-              <Link href={"/pages/about"} legacyBehavior>
-                <a className="hover:underline hover:underline-thickness-4">
-                  About
-                </a>
-              </Link>
-            </nav> */}
             {/* Mode switch */}
             {/* <div className="w-28 border-gray-300 border rounded-full p-1 shadow-inner flex flex-row justify-between items-center bg-gray-50">
             {/* Day 

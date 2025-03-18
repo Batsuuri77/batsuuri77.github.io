@@ -4,7 +4,7 @@ import { SOCIAL_IMAGE_PATHS } from '@/app/utils/imagePaths';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='flex-shrink-0 w-full h-50'>
       <div className='flex flex-col justify-between pt-6 border-t-[2px] border-borderBlack border-dashed w-full h-50'>
         <div className='flex flex-col justify-center items-center gap-4'>
           <h1 className='font-semibold text-4xl'>FIND ME ON 👇</h1>
