@@ -6,7 +6,7 @@ import Navbar from '../Navbar';
 
 const Header = () => {
   const navLinks = [
-    // { name: "Projects", href: "/pages/projects" },
+    { name: 'Projects', href: '/pages/projects/' },
     { name: 'About', href: '/pages/about/' },
   ];
 

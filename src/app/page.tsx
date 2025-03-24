@@ -9,7 +9,7 @@ export default function Home() {
   const bioSection =
     'h-screen pt-36 flex flex-col justify-between items-center gap-8 w-full';
   const techContainer =
-    'py-2 flex flex-row gap-4 items-center justify-center border border-2 rounded-2xl shadow-2xl bg-white/10 backdrop-blur-2xl backdrop-saturate-150';
+    'py-4 px-10 flex flex-row gap-4 items-center justify-between border border-2 rounded-2xl shadow-2xl bg-white/10 backdrop-blur-2xl backdrop-saturate-150';
   const handleType = (count: number) => {
     // access word count number
     console.log(count);
@@ -74,26 +74,30 @@ export default function Home() {
       </section>
 
       {/* Technologies */}
-      <section className='w-full flex flex-col justify-center items-center gap-10 pb-24'>
+      <section className='w-full flex flex-col justify-center items-center gap-10 pb-20'>
         <div>
           <h1 className='text-center text-4xl font-semibold mb-5'>
             TECHNOLOGIES
           </h1>
 
           {/* Front-End Technologies */}
-          <div className='flex flex-col gap-4 mb-10'>
+          <div className='flex flex-col gap-4 mb-5'>
             <h2 className='text-2xl font-semibold text-center'>FRONT-END</h2>
             <div className={`${techContainer} `}>
               <Technologies
                 imagePath={IMAGE_PATHS.html}
                 imageAlt={'HTML'}
                 title={'HTML5'}
+                imageWidth={41}
+                imageHeight={40}
                 borderColor='#1d4ed8'
               />
               <Technologies
                 imagePath={IMAGE_PATHS.js}
                 imageAlt={'JavaScript'}
                 title={'JavaScript'}
+                imageWidth={45}
+                imageHeight={45}
                 borderColor='#1d4ed8'
               />
               <Technologies
@@ -112,6 +116,8 @@ export default function Home() {
                 imagePath={IMAGE_PATHS.nextjs}
                 imageAlt={'Next.js'}
                 title={'Next.js'}
+                imageHeight={47}
+                imageWidth={47}
                 borderColor='#1d4ed8'
               />
             </div>
@@ -128,11 +134,15 @@ export default function Home() {
                     imagePath={IMAGE_PATHS.css}
                     imageAlt={'CSS'}
                     title='CSS'
+                    imageHeight={46}
+                    imageWidth={46}
                   />
                   <Technologies
                     imagePath={IMAGE_PATHS.tailwind}
                     imageAlt={'Tailwind CSS'}
                     title='Tailwind CSS'
+                    imageHeight={60}
+                    imageWidth={60}
                   />
                   <Technologies
                     imagePath={IMAGE_PATHS.figma}
@@ -151,15 +161,15 @@ export default function Home() {
                     imageClassName='relative'
                     imagePath={IMAGE_PATHS.nodejs}
                     imageHeight={50}
-                    imageWidth={100}
+                    imageWidth={90}
                     imageAlt={'Node.js'}
                     title='Node.js'
                   />
                   <Technologies
                     imageClassName='relative'
                     imagePath={IMAGE_PATHS.mongodb}
-                    imageHeight={50}
-                    imageWidth={100}
+                    imageHeight={70}
+                    imageWidth={120}
                     imageAlt={'MongoDB'}
                     title='MongoDB'
                   />

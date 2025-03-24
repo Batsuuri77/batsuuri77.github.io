@@ -254,23 +254,27 @@ const About = () => {
             <h1 className='text-3xl font-semibold mb-4'>ACADEMIC PROJECTS</h1>
             <div className='flex flex-row gap-10 justify-start items-start'>
               <ProjectBrief
-                imagePath={PROJECTS_IMAGE_PATHS.bookhub}
+                imagePath={PROJECTS_IMAGE_PATHS.bookhuball}
                 imageAlt={'BOOKHUB'}
+                imageHeight={500}
+                imageWidth={500}
                 title={'BOOKHUB'}
                 technologies={
-                  'React Native, TypeScript, JavaScript, Expo, Native Wind, Node.js, Appwrite, GitHub'
-                } //React, Node.js, MongoDB
+                  'React Native, TypeScript, Expo, Native Wind, Node.js, Appwrite, GitHub'
+                }
                 description={
                   'A mobile application for book readers to take a book notes, share their thoughts and reviews with others. Manage their reading list and track their reading progress.'
                 }
                 details={''}
               ></ProjectBrief>
               <ProjectBrief
-                imagePath={PROJECTS_IMAGE_PATHS.sapphire}
+                imagePath={PROJECTS_IMAGE_PATHS.sapphire3}
                 imageAlt={'SAPPHIRE'}
                 title={'SAPPHIRE'}
+                imageHeight={500}
+                imageWidth={500}
                 technologies={
-                  'Next.js, React, TypeScript, Tailwind CSS, Node.js, MongoDb, GitHub'
+                  'Next.js, TypeScript, Tailwind CSS, Node.js, MongoDb, GitHub'
                 }
                 description={
                   'E-commerce website for selling souvenier products for Mongolian small business owner. Users can view products, add them to cart, and make a purchase.'

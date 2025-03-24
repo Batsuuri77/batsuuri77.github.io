@@ -15,7 +15,7 @@ interface TechnologiesProps {
 }
 
 const Technologies: React.FC<TechnologiesProps> = ({
-  containerClassName = 'w-[150px] h-[150px] flex flex-col items-center justify-center  rounded-2xl ',
+  containerClassName = 'h-[150px] flex flex-col items-center justify-between  rounded-2xl p-6',
   imageClassName = 'relative',
   imagePath,
   imageHeight = 50,

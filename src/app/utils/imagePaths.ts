@@ -12,11 +12,13 @@ export const IMAGE_PATHS = {
 };
 
 export const PROJECTS_IMAGE_PATHS = {
+  bookhuball: '/Images/Projects/Bookhub/BookHubAll.png',
   bookhub: '/Images/Projects/Bookhub/BookHub.png',
   sapphire: '/Images/Projects/Sapphire/Home.png',
   sapphire_about: '/Images/Projects/Sapphire/About.png',
   sapphire_contact: '/Images/Projects/Sapphire/Contact.png',
   sapphire_product: '/Images/Projects/Sapphire/Product.png',
+  sapphire3: '/Images/Projects/Sapphire/Sapphire3.png',
 };
 
 export const PRO_PATH = {
