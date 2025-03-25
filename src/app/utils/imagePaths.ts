@@ -27,6 +27,7 @@ export const PRO_PATH = {
 
 export const SOCIAL_IMAGE_PATHS = {
   facebook: '/Images/social/Facebook.png',
+  facebook1: '/Images/social/Facebook1.png',
   instagram: '/Images/social/Instagram.png',
   github: '/Images/social/GitHub.png',
   linkedin: '/Images/social/Linkedin.png',

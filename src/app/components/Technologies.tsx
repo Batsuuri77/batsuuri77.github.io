@@ -15,14 +15,12 @@ interface TechnologiesProps {
 }
 
 const Technologies: React.FC<TechnologiesProps> = ({
-  containerClassName = 'h-[150px] flex flex-col items-center justify-between  rounded-2xl p-6',
-  imageClassName = 'relative',
+  containerClassName = 'h-[100px] 2xl:h-[150px] flex flex-col items-center justify-center rounded-2xl gap-4',
+  imageClassName = 'flex items-center justify-center w-[40px] h-[40px] sm:w-[40px] sm:h-[40px] md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] xl:w-[55px] xl:h-[55px] 2xl:w-[60px] 2xl:h-[60px]',
   imagePath,
-  imageHeight = 50,
-  imageWidth = 50,
   imageAlt,
   title,
-  titleClassName = 'mt-4 text-xl font-semibold',
+  titleClassName = 'text-lg sm:text-xl lg:text-xl 2xl:text-3xl font-semibold',
 }) => {
   return (
     <div className={containerClassName}>
@@ -30,8 +28,8 @@ const Technologies: React.FC<TechnologiesProps> = ({
         <Image
           src={imagePath}
           alt={imageAlt}
-          width={imageWidth}
-          height={imageHeight}
+          width={100} // Default size
+          height={100} // Default size
           style={{ objectFit: 'contain' }}
         />
       </div>

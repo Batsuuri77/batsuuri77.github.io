@@ -12,7 +12,7 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
   console.log(pathname);
 
   return (
-    <nav className='hidden sm:flex flex-row justify-between md:gap-14 text-xl font-medium items-center'>
+    <nav className='hidden sm:flex flex-row justify-between sm:text-lg 2xl:text-3xl sm:gap-4 md:gap-10 lg:gap-20 text-xl font-medium items-center'>
       {links.map((link) => (
         <Link key={link.href} href={link.href} legacyBehavior>
           <a

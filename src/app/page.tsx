@@ -6,10 +6,10 @@ import { Typewriter } from 'react-simple-typewriter';
 import Image from 'next/image';
 
 export default function Home() {
-  const bioSection =
-    'h-screen pt-36 flex flex-col justify-between items-center gap-8 w-full';
   const techContainer =
-    'py-4 px-10 flex flex-row gap-4 items-center justify-between border border-2 rounded-2xl shadow-2xl bg-white/10 backdrop-blur-2xl backdrop-saturate-150';
+    'w-full flex flex-wrap sm:flex-row  items-center justify-center 2xl:justify-between gap-y-4 gap-x-6 sm:gap-x-8 py-6 px-3 xl:px-10 2xl:px-28 border-2 rounded-2xl shadow-2xl bg-white/10 backdrop-blur-xl backdrop-saturate-150';
+  const techSubTitle =
+    'text-xl sm:text-2xl 2xl:text-3xl font-semibold text-center';
   const handleType = (count: number) => {
     // access word count number
     console.log(count);
@@ -19,71 +19,73 @@ export default function Home() {
     console.log(`Done after 5 loops!`);
   };
   return (
-    <main className='flex-1 flex flex-col items-center justify-center'>
-      {/* Bio section */}
-      <section className={bioSection}>
-        {/* Text Section */}
-        <div className='flex flex-col justify-center items-center gap-4'>
-          <div className='text-7xl font-semibold mb-4'>
-            <div>
-              <Typewriter
-                words={[
-                  "G'DAY MATES!",
-                  'HOLA AMIGOS!',
-                  'HALLO KUMPELS!',
-                  'CIAO AMICI!',
-                  'ПРИВЕТ, РЕБЯТА!',
-                  '你好，朋友们',
-                  '안녕 친구들!',
-                  'やあ、みんな！',
-                  'HEJ KOMPISAR!',
-                  'ӨДРИЙН МЭНД!',
-                ]}
-                cursor
-                cursorBlinking={true}
-                cursorStyle={'|'}
-                loop={5}
-                typeSpeed={100}
-                deleteSpeed={100}
-                delaySpeed={2000}
-                onLoopDone={handleDone}
-                onType={handleType}
+    <main className='flex-1 flex flex-col items-center justify-center w-full'>
+      <div className='flex flex-col w-[80%]'>
+        {/* Bio section */}
+        <section className='pt-28 sm:pt-36 flex flex-col justify-between items-center gap-6 sm:gap-8 w-full text-center mb-14'>
+          {/* Greeting text */}
+          <div className='flex flex-col justify-center items-center gap-4'>
+            <div className='text-3xl sm:text-5xl 2xl:text-7xl font-semibold mb-4'>
+              <div>
+                <Typewriter
+                  words={[
+                    "G'DAY MATES!",
+                    'HOLA AMIGOS!',
+                    'HALLO KUMPELS!',
+                    'CIAO AMICI!',
+                    'ПРИВЕТ, РЕБЯТА!',
+                    '你好，朋友们',
+                    '안녕 친구들!',
+                    'やあ、みんな！',
+                    'HEJ KOMPISAR!',
+                    'ӨДРИЙН МЭНД!',
+                    "G'DAY MATES!",
+                  ]}
+                  cursor
+                  cursorBlinking={true}
+                  cursorStyle={'|'}
+                  loop={5}
+                  typeSpeed={100}
+                  deleteSpeed={100}
+                  delaySpeed={2000}
+                  onLoopDone={handleDone}
+                  onType={handleType}
+                />
+                <WavingHand />
+              </div>
+            </div>
+            {/* Bio text */}
+            <div className='text-2xl sm:text-3xl 2xl:text-5xl'>
+              I am <span className='font-bold'>BATSUURI BATTSOOJ.</span>
+            </div>
+            <p className='text-xl sm:text-2xl 2xl:text-4xl mb-6 text-center'>
+              A passionate front-end developer settled in Melbourne, Australia
+              🙂.
+            </p>
+            {/* Image */}
+            <div className='w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] 2xl:w-[650px] 2xl:h-[650px] flex-shrink-0 overflow-hidden drop-shadow-2xl rounded-2xl'>
+              <Image
+                src={PRO_PATH.pro}
+                alt="Batsuuri's profile 1.06"
+                layout='responsive'
+                objectFit='cover'
+                width={644}
+                height={687}
               />
-              <WavingHand />
             </div>
           </div>
-          {/* Image section */}
-          <p className='text-2xl mb-6 text-center'>
-            <span className='text-4xl'>
-              I am <span className='font-bold'>BATSUURI BATTSOOJ</span>
-            </span>
-            , <br />a passionate front-end developer settled in Melbourne,
-            Australia 🙂.
-          </p>
-          <div className='flex-shrink-0 mb-12 w-52 h-64 sm:w-52 sm:h-64 md:w-60 md:h-72 lg:w-[470px] lg:h-[500px] overflow-hidden drop-shadow-2xl rounded-2xl'>
-            <Image
-              src={PRO_PATH.pro}
-              alt="Batsuuri's profile 1.06"
-              layout='responsive'
-              objectFit='cover'
-              width={644}
-              height={687}
-            />
-          </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Technologies */}
-      <section className='w-full flex flex-col justify-center items-center gap-10 pb-20'>
-        <div>
-          <h1 className='text-center text-4xl font-semibold mb-5'>
+        {/* Technologies */}
+        <section className='w-full lg:px-10  flex flex-col justify-center items-center pb-20 sm:gap-5'>
+          <h1 className='text-center text-3xl sm:text-4xl md:text-4xl lg:text-5xl mb-2 font-semibold'>
             TECHNOLOGIES
           </h1>
 
           {/* Front-End Technologies */}
-          <div className='flex flex-col gap-4 mb-5'>
-            <h2 className='text-2xl font-semibold text-center'>FRONT-END</h2>
-            <div className={`${techContainer} `}>
+          <div className='flex flex-col gap-4 w-full mb-6'>
+            <h2 className={techSubTitle}>FRONT-END</h2>
+            <div className={`${techContainer}`}>
               <Technologies
                 imagePath={IMAGE_PATHS.html}
                 imageAlt={'HTML'}
@@ -122,69 +124,56 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='flex flex-row gap-4'>
-            <div className='flex flex-row gap-20 items-center justify-center'>
-              {/* Styling Technologies */}
-              <div className='flex flex-col gap-4'>
-                <h2 className='text-2xl font-semibold text-center  '>
-                  STYLING
-                </h2>
-                <div className={`${techContainer} px-8`}>
-                  <Technologies
-                    imagePath={IMAGE_PATHS.css}
-                    imageAlt={'CSS'}
-                    title='CSS'
-                    imageHeight={46}
-                    imageWidth={46}
-                  />
-                  <Technologies
-                    imagePath={IMAGE_PATHS.tailwind}
-                    imageAlt={'Tailwind CSS'}
-                    title='Tailwind CSS'
-                    imageHeight={60}
-                    imageWidth={60}
-                  />
-                  <Technologies
-                    imagePath={IMAGE_PATHS.figma}
-                    imageAlt={'Figma'}
-                    title='Figma'
-                  />
-                </div>
+          {/* Styling and Back-End Technologies */}
+          <div className='w-full flex flex-col gap-6 items-center justify-center lg:flex-row lg:gap-10'>
+            {/* Styling Technologies */}
+            <div className='w-full flex flex-col gap-4 sm:mb-10 lg:mb-0'>
+              <h2 className={techSubTitle}>STYLING</h2>
+              <div className={`${techContainer}`}>
+                <Technologies
+                  imagePath={IMAGE_PATHS.css}
+                  imageAlt={'CSS'}
+                  title='CSS'
+                  imageHeight={46}
+                  imageWidth={46}
+                />
+                <Technologies
+                  imagePath={IMAGE_PATHS.tailwind}
+                  imageAlt={'Tailwind CSS'}
+                  title='Tailwind CSS'
+                />
+                <Technologies
+                  imagePath={IMAGE_PATHS.figma}
+                  imageAlt={'Figma'}
+                  title='Figma'
+                />
               </div>
-              {/* Back-End Technologies */}
-              <div className='flex flex-col gap-4 items-center justify-center'>
-                <h2 className='text-2xl font-semibold text-center text-gray-700'>
-                  BACK-END
-                </h2>
-                <div className={`${techContainer}`}>
-                  <Technologies
-                    imageClassName='relative'
-                    imagePath={IMAGE_PATHS.nodejs}
-                    imageHeight={50}
-                    imageWidth={90}
-                    imageAlt={'Node.js'}
-                    title='Node.js'
-                  />
-                  <Technologies
-                    imageClassName='relative'
-                    imagePath={IMAGE_PATHS.mongodb}
-                    imageHeight={70}
-                    imageWidth={120}
-                    imageAlt={'MongoDB'}
-                    title='MongoDB'
-                  />
-                </div>
+            </div>
+            {/* Back-End Technologies */}
+            <div className='w-full flex flex-col gap-4 items-center justify-center'>
+              <h2 className={techSubTitle}>BACK-END</h2>
+              <div className={`${techContainer}`}>
+                <Technologies
+                  imageClassName='relative'
+                  imagePath={IMAGE_PATHS.nodejs}
+                  imageHeight={50}
+                  imageWidth={90}
+                  imageAlt={'Node.js'}
+                  title='Node.js'
+                />
+                <Technologies
+                  imageClassName='relative'
+                  imagePath={IMAGE_PATHS.mongodb}
+                  imageHeight={70}
+                  imageWidth={120}
+                  imageAlt={'MongoDB'}
+                  title='MongoDB'
+                />
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   );
 }
-
-// https://mailchimp.com/resources/web-developer-portfolio-examples/?ds_c=DEPT_AOC_Google_Search_ANZ_EN_NB_Acquire_Broad_DSA-Rsrc_ANZ&ds_kids=p78570082175&ds_a_lid=dsa-2227026702184&ds_cid=71700000115924393&ds_agid=58700008604643922&gad_source=1&gclid=CjwKCAjwyfe4BhAWEiwAkIL8sBFXIXSbWZpzPFFleVep4Tb-sFzqpXBnI1rOR0nvyHj5StDGxLPuYxoC_yQQAvD_BwE&gclsrc=aw.ds
-
-// https://www.youtube.com/watch?v=Kb1f5bvF6f4
-
-//rafce
