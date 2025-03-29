@@ -17,7 +17,7 @@ const Footer = () => {
             href='mailto: batsuuri2146@gmail.com'
             target='_blank'
             rel='noopener noreferrer'
-            className='flex flex-row justify-between gap-4 text-md sm:text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal'
+            className='flex flex-row justify-between text-md sm:text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal'
           >
             batsuuri2146@gmail.com
           </a>

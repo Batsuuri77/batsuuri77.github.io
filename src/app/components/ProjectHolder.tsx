@@ -51,7 +51,7 @@ const ProjectHolder: React.FC<ProjectHolderProps> = ({
           </h2>
           <div className='flex flex-row gap-2 align-middle items-center w-full justify-center mb-2 sm:mb-3'>
             <span className='aligne-middle w-[2%] rounded-lg h-[2px] bg-blue-700 '></span>
-            <span className='text-gray-500 text-base md:text-base lg:text-xl 2xl:text-2xl'>
+            <span className='text-gray-500 text-sm md:text-base lg:text-xl 2xl:text-2xl'>
               {subtitle}
             </span>
           </div>

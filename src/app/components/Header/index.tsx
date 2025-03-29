@@ -20,7 +20,7 @@ const Header = () => {
       <header className='fixed top-0 left-0 w-screen flex justify-center  items-centerc py-2 bg-white drop-shadow-md z-50'>
         <div className='flex flex-row justify-between items-center my-1 w-[80%]'>
           {/* Logo */}
-          <span className='font-light text-center text-lg sm:text-lg md:text-xl xl:text-xl 2xl:text-2xl text-gray-800 px-4 py-2 '>
+          <span className='font-light text-center text-sm md:text-base lg:text-xl 2xl:text-2xl text-gray-800 px-4 py-2 '>
             <Link href={'/'}>BATSUURI</Link>
           </span>
           {/* Navigations */}

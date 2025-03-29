@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 interface BinaryMeterProps {
   binaryNumber: string;
@@ -11,12 +11,12 @@ interface BinaryMeterProps {
 
 const BinaryMeter: React.FC<BinaryMeterProps> = ({
   binaryNumber,
-  containerClassName = "flex space-x-1 text-xl font-bold",
-  digitClassName = "w-8 h-8 bg-gray-800 text-white flex items-center justify-center rounded overflow-hidden",
+  containerClassName = 'flex space-x-1 text-xl font-bold',
+  digitClassName = 'w-8 h-8 bg-gray-800 text-white flex items-center justify-center rounded overflow-hidden',
 }) => {
-  const binaryArray = binaryNumber.split("").map(Number);
+  const binaryArray = binaryNumber.split('').map(Number);
   const [digits, setDigits] = useState<number[]>(() =>
-    new Array(binaryArray.length).fill(0)
+    new Array(binaryArray.length).fill(0),
   );
   const [completed, setCompleted] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -66,7 +66,7 @@ const BinaryMeter: React.FC<BinaryMeterProps> = ({
           className={digitClassName}
           initial={{ y: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
         >
           {digit}
         </motion.div>
