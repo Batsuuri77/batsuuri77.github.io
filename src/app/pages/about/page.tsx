@@ -73,7 +73,7 @@ const About = () => {
           <div className='flex flex-col justify-center items-center gap-8'>
             <div className='flex-shrink-0 w-52 h-54 sm:w-64 sm:h-62 md:w-80 md:h-94 lg:w-[400px] lg:h-[430px] 2xl:w-[480] 2xl:h-[420px] overflow-hidden drop-shadow-2xl rounded-2xl'>
               <Image
-                src={PRO_PATH.pro}
+                src={PRO_PATH.pro1}
                 alt="Batsuuri's profile 1.06"
                 layout='responsive'
                 objectFit='cover'

@@ -23,6 +23,7 @@ export const PROJECTS_IMAGE_PATHS = {
 
 export const PRO_PATH = {
   pro: '/Images/pro.png',
+  pro1: '/Images/pro1.JPG',
 };
 
 export const SOCIAL_IMAGE_PATHS = {

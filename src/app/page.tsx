@@ -65,7 +65,7 @@ export default function Home() {
             {/* Image */}
             <div className='w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] 2xl:w-[650px] 2xl:h-[650px] flex-shrink-0 overflow-hidden drop-shadow-2xl rounded-2xl'>
               <Image
-                src={PRO_PATH.pro}
+                src={PRO_PATH.pro1}
                 alt="Batsuuri's profile 1.06"
                 layout='responsive'
                 objectFit='cover'
