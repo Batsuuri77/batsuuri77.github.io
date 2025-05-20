@@ -21,8 +21,8 @@ const ProjectHolder: React.FC<ProjectHolderProps> = ({
   containerClassName = 'flex flex-col xl:flex-row gap-1 2xl:gap-4 items-center align-middle py-5 2xl:py-10',
   imageClassName = 'xl:mr-10',
   imageAlt,
-  imageHeight = 60,
-  imageWidth = 80,
+  imageHeight = 1000,
+  imageWidth = 1000,
   imagePath,
   title,
   subtitle,
@@ -35,13 +35,13 @@ const ProjectHolder: React.FC<ProjectHolderProps> = ({
 
   return (
     <div className={containerClassName}>
-      <div className='relative w-full max-w-md aspect-[4/3] overflow-hidden mx-auto xl:mr-10'>
+      <div className='relative w-full max-w-lg aspect-[4/3] overflow-hidden mx-auto xl:mr-10'>
         <Image
           width={imageWidth}
           height={imageHeight}
           alt={imageAlt}
           src={imagePath}
-          className={`w-full h-auto object-cover rounded-xl ${imageClassName}`}
+          className={`object-cover rounded-xl ${imageClassName}`}
           priority={title?.toLowerCase() === 'bookhub'}
           loading={title?.toLowerCase() !== 'bookhub' ? 'lazy' : undefined}
         ></Image>

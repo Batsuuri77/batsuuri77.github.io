@@ -75,10 +75,9 @@ const About = () => {
               <Image
                 src={PRO_PATH.pro1}
                 alt="Batsuuri's profile 1.06"
-                layout='responsive'
-                objectFit='cover'
-                width={48}
-                height={51}
+                className='object-cover w-full h-auto'
+                width={512}
+                height={768}
               />
             </div>
             <div className='flex flex-col justify-center items-center gap-2'>
@@ -270,8 +269,8 @@ const About = () => {
               <ProjectBrief
                 imagePath={PROJECTS_IMAGE_PATHS.bookhuball}
                 imageAlt={'BOOKHUB'}
-                imageHeight={50}
-                imageWidth={50}
+                imageHeight={512}
+                imageWidth={768}
                 title={'BOOKHUB'}
                 titleLink='/pages/projects/'
                 technologies={
@@ -287,8 +286,8 @@ const About = () => {
                 imageAlt={'SAPPHIRE'}
                 title={'SAPPHIRE'}
                 titleLink='/pages/projects/'
-                imageHeight={50}
-                imageWidth={50}
+                imageHeight={512}
+                imageWidth={768}
                 technologies={
                   'Next.js, TypeScript, Tailwind CSS, Node.js, MongoDb, GitHub'
                 }
