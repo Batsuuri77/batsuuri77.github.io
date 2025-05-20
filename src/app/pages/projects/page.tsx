@@ -27,8 +27,8 @@ const Projects = () => {
           <ProjectHolder
             imagePath={PROJECTS_IMAGE_PATHS.bookhuball}
             imageAlt={'BookHub'}
-            imageHeight={1000}
-            imageWidth={1000}
+            imageHeight={60}
+            imageWidth={80}
             title='bookhub'
             subtitle='Social media mobile application'
             description='A social media mobile application for book readers to take a book notes, share their thoughts and reviews with others. Manage their reading list and track their reading progress.'
@@ -52,8 +52,8 @@ const Projects = () => {
           <ProjectHolder
             imagePath={PROJECTS_IMAGE_PATHS.sapphire3}
             imageAlt={'Sapphire'}
-            imageHeight={1000}
-            imageWidth={1000}
+            imageHeight={60}
+            imageWidth={80}
             title='sapphire'
             subtitle='E-commerce website'
             description='E-commerce website for selling souvenier products for Mongolian small business owner. Users can view products, add them to cart, and make a purchase.'

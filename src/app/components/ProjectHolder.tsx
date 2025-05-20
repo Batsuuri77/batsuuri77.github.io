@@ -18,11 +18,11 @@ interface ProjectHolderProps {
 }
 
 const ProjectHolder: React.FC<ProjectHolderProps> = ({
-  containerClassName = 'flex flex-col xl:flex-row gap-1 2xl:gap-4 items-center align-middle  py-5 2xl:py-10',
+  containerClassName = 'flex flex-col xl:flex-row gap-1 2xl:gap-4 items-center align-middle py-5 2xl:py-10',
   imageClassName = 'xl:mr-10',
   imageAlt,
-  imageHeight,
-  imageWidth,
+  imageHeight = 60,
+  imageWidth = 80,
   imagePath,
   title,
   subtitle,
@@ -35,13 +35,15 @@ const ProjectHolder: React.FC<ProjectHolderProps> = ({
 
   return (
     <div className={containerClassName}>
-      <div className='flex justify-center items-center'>
+      <div className='relative w-full max-w-md aspect-[4/3] overflow-hidden mx-auto xl:mr-10'>
         <Image
           width={imageWidth}
           height={imageHeight}
           alt={imageAlt}
           src={imagePath}
-          className={imageClassName}
+          className={`w-full h-auto object-cover rounded-xl ${imageClassName}`}
+          priority={title?.toLowerCase() === 'bookhub'}
+          loading={title?.toLowerCase() !== 'bookhub' ? 'lazy' : undefined}
         ></Image>
       </div>
       <div className='flex flex-col w-full justify-center items-center 2xl:w-3/4'>

@@ -17,6 +17,6 @@ export default function ClientLayout({
       <Header />
       <main className='flex-1 flex flex-col'>{children}</main>
       <Footer />
-    </div> //{!isAboutPage && <Footer />}
+    </div>
   );
 }

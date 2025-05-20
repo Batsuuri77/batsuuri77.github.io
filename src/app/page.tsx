@@ -67,10 +67,9 @@ export default function Home() {
               <Image
                 src={PRO_PATH.pro1}
                 alt="Batsuuri's profile 1.06"
-                layout='responsive'
-                objectFit='cover'
-                width={644}
-                height={687}
+                width={32}
+                height={34}
+                className='w-full h-auto object-cover'
               />
             </div>
           </div>

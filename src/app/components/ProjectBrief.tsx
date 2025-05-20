@@ -22,11 +22,11 @@ interface ProjectBriefProps {
 
 const ProjectBrief: React.FC<ProjectBriefProps> = ({
   containerClassName = 'flex flex-col gap-4 justify-center items-center',
-  imageContainerClassName = 'flex flex-col overflow-hidden items-center justify-center rounded-2xl shadow-2xl lg:w-96 lg:h-80 xl:w-[480px] xl:h-[400px] 2xl:w-[600px] 2xl:h-[480px] bg-white/10 backdrop-blur-2xl backdrop-saturate-150  content-container border border-gray/20 p-6 mb-2 lg:mb-10',
+  imageContainerClassName = 'flex flex-col overflow-hidden items-center justify-center rounded-2xl shadow-2xl w-full max-w-[500px] max-h-[500px] bg-white/10 backdrop-blur-2xl backdrop-saturate-150 border border-gray/20 p-4',
   imagePath,
   imageAlt,
-  imageHeight = 1000,
-  imageWidth = 1000,
+  imageHeight,
+  imageWidth,
   title,
   titleClassName = 'text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl font-semibold text-center text-blue-700 target:_blank cursor-pointer',
   titleLink,
@@ -43,6 +43,9 @@ const ProjectBrief: React.FC<ProjectBriefProps> = ({
           alt={imageAlt}
           width={imageWidth}
           height={imageHeight}
+          priority={title?.toLowerCase() === 'bookhub'}
+          loading={title?.toLowerCase() !== 'bookhub' ? 'lazy' : undefined}
+          className='w-full h-auto object-cover rounded-xl'
         />
       </div>
       <a

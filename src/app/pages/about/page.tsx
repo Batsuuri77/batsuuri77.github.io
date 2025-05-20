@@ -77,8 +77,8 @@ const About = () => {
                 alt="Batsuuri's profile 1.06"
                 layout='responsive'
                 objectFit='cover'
-                width={483}
-                height={513}
+                width={48}
+                height={51}
               />
             </div>
             <div className='flex flex-col justify-center items-center gap-2'>
@@ -270,8 +270,8 @@ const About = () => {
               <ProjectBrief
                 imagePath={PROJECTS_IMAGE_PATHS.bookhuball}
                 imageAlt={'BOOKHUB'}
-                imageHeight={1000}
-                imageWidth={1000}
+                imageHeight={50}
+                imageWidth={50}
                 title={'BOOKHUB'}
                 titleLink='/pages/projects/'
                 technologies={
@@ -287,8 +287,8 @@ const About = () => {
                 imageAlt={'SAPPHIRE'}
                 title={'SAPPHIRE'}
                 titleLink='/pages/projects/'
-                imageHeight={1000}
-                imageWidth={1000}
+                imageHeight={50}
+                imageWidth={50}
                 technologies={
                   'Next.js, TypeScript, Tailwind CSS, Node.js, MongoDb, GitHub'
                 }
