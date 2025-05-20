@@ -46,6 +46,7 @@ export default function RootLayout({
           space_mono.variable,
           'font-sm bg-light dark:bg-dark',
         )}
+        suppressHydrationWarning
       >
         <ClientLayout>{children}</ClientLayout>
       </body>
