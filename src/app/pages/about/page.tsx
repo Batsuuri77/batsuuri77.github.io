@@ -27,7 +27,7 @@ const About = () => {
             <p className='text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl'>
               I am <span className='font-bold'>BATSUURI BATTSOOJ</span>, a
               formal Business Development Manager who turned into a passionate
-              front-end developer settled in Melbourne, Australia 🙂.
+              front-end developer settled in Sydney, Australia 🙂.
               <br /> <br />
               {/* <br />
               <span>I was born and raised in Mongolia.</span>
