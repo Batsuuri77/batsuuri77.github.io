@@ -8,7 +8,7 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "deploy": "next build && powershell -Command \"New-Item -Path out/.nojekyll -ItemType File -Force\" && gh-pages -d out",
+    "deploy": "next build && touch out/.nojekyll && gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {
@@ -26,7 +26,7 @@
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19.1.0",
-    "@types/react-dom": "^18",
+    "@types/react-dom": "^19",
     "autoprefixer": "^10.4.20",
     "eslint": "^8",
     "eslint-config-next": "15.0.1",
